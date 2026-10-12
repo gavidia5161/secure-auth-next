@@ -105,10 +105,6 @@ export async function resetPasswordRequest(formData: FormData) {
     redirect('/forgot-password?error=request-failed')
   }
 
-  if (error) {
-    redirect('/forgot-password?error=request-failed')
-  }
-
   redirect('/forgot-password?message=check-email')
 }
 
